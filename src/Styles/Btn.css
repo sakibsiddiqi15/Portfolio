@@ -1,3 +1,23 @@
-.fill{
-    background: linear-gradient(85deg, var(--primary) 0%, var(--primary-lt) 100%);
+.Btn {
+  border: none;
+  outline: 0px;
+  transition: 0.2s;
+  letter-spacing: 0.05em;
+  color: white;
+  margin: 5rem;
+  box-shadow: 0px 15px 15px -10px #716eff80;
+}
+.Btn:hover {
+  box-shadow: none;
+}
+/* .Btn:active {
+  letter-spacing: 0.04em;
+} */
+
+.Btn:focus-within {
+  outline: 2px solid var(--primary-lt) !important;
+  outline-offset: 2px;
+}
+.fill {
+  background: linear-gradient(85deg, var(--primary) 0%, var(--primary-lt) 100%);
 }

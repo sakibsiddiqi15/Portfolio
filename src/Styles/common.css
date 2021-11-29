@@ -3,3 +3,50 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+/* rounded */
+.rounded {
+  border-radius: 12px;
+}
+/* Height */
+.vh-min-100 {
+  min-height: 100vh;
+}
+.center,
+.vh-center,
+.hr-center {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.vh-center {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hr-center {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* background */
+.bg-gradient {
+  background: linear-gradient(85deg, var(--primary), var(--primary-lt)) !important;
+}
+/* line height */
+.lg-base{
+  line-height: 0.05em;
+}
+.lg-lg{
+  line-height: 0.10em;
+}
+/* letter speacing */
+.ls-base{
+  letter-spacing: 0.05em;
+}
+.ls-lg{
+  letter-spacing: 0.10em;
+}

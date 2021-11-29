@@ -1,14 +1,17 @@
 import React from "react";
 import "./App.css";
+import Btn from "./Shared/Component/Buttons/Btn";
+import Title from "./Shared/Component/Buttons/Title";
+import { AiFillProject } from "react-icons/all";
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <h1 className="display-1 fw-bold">react.js </h1>
-        <h4 className="fw-light">Sakib Siddiqi Supto</h4>
-        <p className="text-primary h6 fw-light">sakibsiddiqi15@gmail.com</p>
-        <p className="text-primary h6 fw-light">sakibsiddiqisupto@gmail.com</p>
-      </div>
+      <Title title="Hello" icon={<AiFillProject size={50}/>}>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ut autem
+        vel, velit consequatur molestiae et natus quibusdam reprehenderit
+        voluptates.
+      </Title>
+      <Btn>Hello Sakib</Btn>
     </div>
   );
 }

@@ -5,7 +5,7 @@
 }
 /* rounded */
 .rounded {
-  border-radius: 12px;
+  border-radius: 8px !important;
 }
 /* Height */
 .vh-min-100 {
@@ -36,6 +36,10 @@
 .bg-gradient {
   background: linear-gradient(85deg, var(--primary), var(--primary-lt)) !important;
 }
+.bg-glass{
+  background: #0004ff60 !important;
+  backdrop-filter: blur(5px);
+}
 /* line height */
 .lg-base{
   line-height: 0.05em;
@@ -49,4 +53,27 @@
 }
 .ls-lg{
   letter-spacing: 0.10em;
+}
+/* aspect ration */
+.a-r-16-9{
+  aspect-ratio: 16/9;
+}
+.a-r-13-9{
+  aspect-ratio: 13/9;
+}
+.a-r-4-4{
+  aspect-ratio: 1/1;
+}
+/* aspect ration img */
+.a-r-img-16-9{
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+.a-r-img-13-9{
+  aspect-ratio: 13/9;
+  object-fit: contain;
+}
+/* border */
+.border-glass{
+  border-color: #4f70ff60 !important;
 }

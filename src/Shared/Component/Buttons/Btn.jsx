@@ -1,10 +1,25 @@
 import React from "react";
 
-const Btn = ({ children, ...rest }) => {
+const Btn = ({ children, link, ...rest }) => {
+  const className = "Btn rounded fill py-2 px-3";
   return (
-    <button {...rest} className="Btn rounded fill py-2 px-3">
-      {children}
-    </button>
+    <>
+      {link ? (
+        <a
+          {...rest}
+          target="_blank"
+          rel="noreferrer"
+          href={link}
+          className={className}
+        >
+          {children}
+        </a>
+      ) : (
+        <button {...rest} className={className}>
+          {children}
+        </button>
+      )}
+    </>
   );
 };
 

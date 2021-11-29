@@ -5,9 +5,11 @@
   letter-spacing: 0.05em;
   color: white;
   box-shadow: 0px 15px 15px -10px #716eff80;
+  text-decoration: none;
 }
 .Btn:hover {
   box-shadow: none;
+  color: white;
 }
 /* .Btn:active {
   letter-spacing: 0.04em;

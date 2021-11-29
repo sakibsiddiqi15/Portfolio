@@ -77,3 +77,13 @@
 .border-glass{
   border-color: #4f70ff60 !important;
 }
+/* text */
+.primary{
+  color: var(--primary);
+}
+.primary-lt{
+  color: var(--primary-lt);
+}
+.dark{
+  color: var(--dark);
+}

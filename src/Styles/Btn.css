@@ -1,0 +1,3 @@
+.fill{
+    background: linear-gradient(85deg, var(--primary) 0%, var(--primary-lt) 100%);
+}

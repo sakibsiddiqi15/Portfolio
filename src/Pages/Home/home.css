@@ -1,0 +1,14 @@
+.input_element {
+  border: none;
+  outline: none;
+  /* border: 2px solid var(--primary-lt); */
+  width: 100%;
+  transition: 0.2s;
+  color: var(--dark);
+  font-weight: 500;
+  border-bottom: 2px solid var(--primary-lt);
+  border-radius: none;
+}
+.input_element:focus-within{
+    box-shadow: 0 10px 25px -16px var(--primary-lt);
+}

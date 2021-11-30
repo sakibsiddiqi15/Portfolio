@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Title from "../../../Shared/Component/Title/Title";
-import { AiFillProject } from "react-icons/all";
 import { Col, Container, Row } from "react-bootstrap";
 import MyCard from "../../../Shared/Component/Cards/MyCard";
+import { AiFillProject } from "react-icons/all";
 const Projects = () => {
+  const [projectData, setProjectData] = useState([]);
+  useEffect(() => {
+    fetch("/project.data.json")
+      .then((res) => res.json())
+      .then((data) => setProjectData(data));
+  }, []);
   return (
     <section className="vh-min-100">
       <Title title="Projects" icon={<AiFillProject size={50} />}>
@@ -11,40 +17,19 @@ const Projects = () => {
         my projects.
       </Title>
       <Container>
-        <Row xs={1} md={2} lg={3} className="mt-5 g-4">
-          <Col>
-            <MyCard
-              img="/Images/bb.png"
-              title="B.B. Bicycle Buy"
-              github="https://github.com/sakibsiddiqi15/MERN-BB-Bicycle-buy"
-              livesite="https://bb-bicycle-s15.netlify.app/"
-            >
-              This website for buying bicycle. It's a full-stack web
-              application.
-            </MyCard>
-          </Col>
-          <Col>
-            <MyCard
-              img="/Images/diye-asbo.png"
-              title="B.B. Bicycle Buy"
-              github="https://github.com/sakibsiddiqi15/MERN-BB-Bicycle-buy"
-              livesite="https://bb-bicycle-s15.netlify.app/"
-            >
-              This website for buying bicycle. It's a full-stack web
-              application.
-            </MyCard>
-          </Col>
-          <Col>
-            <MyCard
-              img="/Images/lg-hospital.png"
-              title="B.B. Bicycle Buy"
-              github="https://github.com/sakibsiddiqi15/MERN-BB-Bicycle-buy"
-              livesite="https://bb-bicycle-s15.netlify.app/"
-            >
-              This website for buying bicycle. It's a full-stack web
-              application.
-            </MyCard>
-          </Col>
+        <Row xs={1} md={2} lg={3} className="mt-5 g-4 mb-4">
+          {projectData.map((project) => (
+            <Col>
+              <MyCard
+                img={project.img}
+                title={project.title}
+                github={project.github}
+                livesite={project.live}
+              >
+                {project.text}
+              </MyCard>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

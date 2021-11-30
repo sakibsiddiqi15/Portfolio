@@ -3,7 +3,11 @@ import { Card, Col, Row } from "react-bootstrap";
 import { GrOverview, BsGithub } from "react-icons/all";
 const MyCard = ({ children, img, title, github, livesite }) => {
   return (
-    <Card className="position-relative my-card rounded border-0 overflow-hidden center">
+    <Card
+      className="position-relative my-card rounded border-0 overflow-hidden center"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <Card.Img
         variant="top"
         src={img}

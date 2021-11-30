@@ -11,11 +11,18 @@ const Btn = ({ children, link, ...rest }) => {
           rel="noreferrer"
           href={link}
           className={className}
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
         >
           {children}
         </a>
       ) : (
-        <button {...rest} className={className}>
+        <button
+          {...rest}
+          className={className}
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           {children}
         </button>
       )}

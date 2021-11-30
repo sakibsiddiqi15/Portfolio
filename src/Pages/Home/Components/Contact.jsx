@@ -2,9 +2,13 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../Shared/Component/Title/Title";
-import { BsChatSquareDots,SiMinutemailer } from "react-icons/all";
+import { BsChatSquareDots, SiMinutemailer } from "react-icons/all";
 import Btn from "../../../Shared/Component/Buttons/Btn";
 import { toast } from "react-toastify";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -34,7 +38,9 @@ const Contact = () => {
             <img
               src="/Images/contact.png"
               alt="contact"
-              className="img-fluid"
+              className="img-fluid  aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             />
           </Col>
           <Col xm={12} md={8}>
@@ -69,7 +75,9 @@ const Contact = () => {
                     className="input_element p-2 mb-4"
                     spellCheck={true}
                   ></textarea>
-                  <Btn type="submit">Send <SiMinutemailer/></Btn>
+                  <Btn type="submit">
+                    Send <SiMinutemailer />
+                  </Btn>
                 </form>
               </Col>
             </Row>

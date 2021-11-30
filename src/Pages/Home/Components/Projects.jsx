@@ -21,6 +21,7 @@ const Projects = () => {
                 title={project.title}
                 github={project.github}
                 livesite={project.live}
+                route={project.route}
               >
                 {project.text}
               </MyCard>

@@ -1,24 +1,105 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useParams } from "react-router";
+import useProjects from "../../../Hooks/useProjects";
+import Page from "../../../Shared/Component/Page";
 import Title from "../../../Shared/Component/Title/Title";
+import { BsGithub, GrOverview } from "react-icons/all";
+import Btn from "../../../Shared/Component/Buttons/Btn";
 
 const SingleProject = () => {
+  const { route } = useParams();
+  const { projects } = useProjects();
+  const thisProject = projects?.find((project) => project.route === route);
+  console.log(thisProject?.features);
   return (
-    <section id="pro" className="vh-min-100">
-    <Title title="kichu ekta">
-        short text
-    </Title>
-      <Container>
-        <Row>
-          <Col>
-          
-          </Col>
-          <Col>
-          
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Page>
+      <section id="pro" className="vh-min-100 mt-5">
+        <Title title={thisProject?.title}>{thisProject?.text}</Title>
+        <Container className="my-5">
+          <Row className="g-4">
+            <Col>
+              <img
+                src={thisProject?.img[0]}
+                alt={thisProject?.route}
+                className="img-fluid border border-2 mb-3"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              />
+              <Row className="g-3">
+                <Col>
+                  <img
+                    src={thisProject?.img[1]}
+                    alt={thisProject?.route}
+                    className="img-fluid border border-2"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  />
+                </Col>
+                <Col>
+                  <img
+                    src={thisProject?.img[2]}
+                    alt={thisProject?.route}
+                    className="img-fluid border border-2"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  />
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <div>
+                <h5 className="fw-bold mb-3">Technology: </h5>
+                <p>
+                  {thisProject?.technology?.map((item) => (
+                    <span
+                      className="p-2 fw-bold dark me-2"
+                      style={{
+                        borderLeft: "3px solid #333",
+                        background: "#00000010",
+                      }}
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="center-bottom"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </p>
+                <h5 className="mt-4 fw-bold mb-3">Technology: </h5>
+                <div>
+                  {thisProject?.features?.map((item) => (
+                    <p
+                      className="p-2 fw-bold dark me-2"
+                      style={{
+                        borderLeft: "3px solid #333",
+                        background: "#00000010",
+                      }}
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="center-bottom"
+                    >
+                      {item}
+                    </p>
+                  ))}
+                  <Row className="justify-content-center mt-4">
+                    <Col xs={3}>
+                      <Btn target="_blank" link={thisProject?.livesite}>
+                        Github
+                        <BsGithub />
+                      </Btn>
+                    </Col>
+                    <Col xs={3}>
+                      <Btn target="_blank" link={thisProject?.livesite}>
+                        Live <GrOverview />
+                      </Btn>
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Page>
   );
 };
 

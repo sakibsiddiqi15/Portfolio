@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <Container className="mt-5 text-center">
-        <h4 style={{ fontWeight: 700 }} className="dark">
+        <h4 style={{ fontWeight: 700 }} className="dark ratio-1-1">
           SAKIB SIDDIQI SUPTO
         </h4>
         <Row className="justify-content-center">

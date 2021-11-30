@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BsGithub, IoNewspaperSharp, CgMenuRight } from "react-icons/all";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <Navbar bg="white" expand="lg" className="fixed-top">
@@ -13,7 +14,7 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link onClick={() => window.scrollTo(0, 0)}>Home</Nav.Link>
+            <Nav.Link onClick={() => window.scrollTo(0, 0)} as={NavLink} exact to="/">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>

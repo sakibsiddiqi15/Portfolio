@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { GrOverview, BsGithub,BsFillArrowUpRightCircleFill } from "react-icons/all";
-const MyCard = ({ children, img, title, github, livesite }) => {
+import { NavLink } from "react-router-dom";
+const MyCard = ({ children, img, title, github,route, livesite }) => {
   return (
     <Card
       className="position-relative my-card rounded border-0 overflow-hidden center"
@@ -39,14 +40,12 @@ const MyCard = ({ children, img, title, github, livesite }) => {
               </a>
             </Col>
             <Col xs={3}>
-              <a
-                target="_blank"
-                rel="noreferrer"
+              <NavLink
                 className="a-r-4-4 rounded-pill center bg-light p-1"
-                href={livesite}
+                to={`/projects/${route}`}
               >
                 <BsFillArrowUpRightCircleFill />
-              </a>
+              </NavLink>
             </Col>
           </Row>
         </Card.Text>

@@ -2,7 +2,7 @@
   {
     "title": "B.B. Bicycle Buy",
     "route": "bicycle-buy",
-    "img": ["/Images/bb.png"],
+    "img": ["/Images/bb.png", "/Images/bb-1.png", "/Images/bb-2.png"],
     "text": "This website for buying bicycle. It's a full-stack web application.",
     "github": "https://github.com/sakibsiddiqi15/MERN-BB-Bicycle-buy",
     "live": "https://bb-bicycle-s15.netlify.app/",
@@ -23,7 +23,11 @@
   {
     "title": "Diye Asbo",
     "route": "diye-asbo",
-    "img": ["/Images/diye-asbo.png"],
+    "img": [
+      "/Images/diye-asbo.png",
+      "/Images/diye-asbo-1.png",
+      "/Images/diye-asbo-2.png"
+    ],
     "text": "This website is service related. It's a full-stack web application.",
     "github": "https://github.com/sakibsiddiqi15/MERN-Diye-Asbo",
     "live": "https://diye-asbo-s15.netlify.app/",
@@ -40,7 +44,11 @@
   {
     "title": "LG-Hospital",
     "route": "lg-hospital",
-    "img": ["/Images/lg-hospital.png"],
+    "img": [
+      "/Images/lg-hospital.png",
+      "/Images/lg-hospital-1.png",
+      "/Images/lg-hospital-2.png"
+    ],
     "text": "This website for Hospital Service. It's a react web application.",
     "github": "https://github.com/sakibsiddiqi15/React-LG-Hospital",
     "live": "https://s15-react-firebase-proje-23469.web.app/",
@@ -54,7 +62,7 @@
   {
     "title": "Movie Night",
     "route": "movie-night",
-    "img": ["/Images/movie.png"],
+    "img": ["/Images/movie.png", "/Images/movie-1.png", "/Images/movie-2.png"],
     "text": "This website for Movie . It's a react web application.",
     "github": "https://github.com/sakibsiddiqi15/react-movie-app",
     "live": "https://movie-night-s15.netlify.app/",
@@ -68,7 +76,7 @@
   {
     "title": "Learn Code from Home",
     "route": "learn-code-from-home",
-    "img": ["/Images/lch.png"],
+    "img": ["/Images/lch.png", "/Images/lch-1.png", "/Images/lch-2.png"],
     "text": "This website for Codding course. It's a react web application.",
     "github": "https://github.com/sakibsiddiqi15/react-lch-website",
     "live": "https://lch-s15.netlify.app/",

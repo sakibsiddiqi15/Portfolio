@@ -50,10 +50,10 @@ const SingleProject = () => {
             <Col>
               <div>
                 <h5 className="fw-bold mb-3">Technology: </h5>
-                <p>
+                <div className="d-flex flex-wrap">
                   {thisProject?.technology?.map((item) => (
                     <span
-                      className="p-2 fw-bold dark me-2"
+                      className="p-2 fw-bold dark m-2"
                       style={{
                         borderLeft: "3px solid #333",
                         background: "#00000010",
@@ -64,7 +64,7 @@ const SingleProject = () => {
                       {item}
                     </span>
                   ))}
-                </p>
+                </div>
                 <h5 className="mt-4 fw-bold mb-3">Technology: </h5>
                 <div>
                   {thisProject?.features?.map((item) => (
@@ -81,13 +81,13 @@ const SingleProject = () => {
                     </p>
                   ))}
                   <Row className="justify-content-center mt-4">
-                    <Col xs={3}>
+                    <Col xs={5}>
                       <Btn target="_blank" link={thisProject?.livesite}>
                         Github
                         <BsGithub />
                       </Btn>
                     </Col>
-                    <Col xs={3}>
+                    <Col xs={5}>
                       <Btn target="_blank" link={thisProject?.livesite}>
                         Live <GrOverview />
                       </Btn>

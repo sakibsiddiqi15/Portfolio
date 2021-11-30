@@ -17,7 +17,7 @@ const SingleProject = () => {
       <section id="pro" className="vh-min-100 mt-5">
         <Title title={thisProject?.title}>{thisProject?.text}</Title>
         <Container className="my-5">
-          <Row className="g-4">
+          <Row xs={1} md={2} className="g-4">
             <Col>
               <img
                 src={thisProject?.img[0]}

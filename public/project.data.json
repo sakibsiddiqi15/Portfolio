@@ -19,5 +19,19 @@
         "text":"This website for Hospital Service. It's a react web application.",
         "github":"https://github.com/sakibsiddiqi15/React-LG-Hospital",
         "live":"https://s15-react-firebase-proje-23469.web.app/"
+    },
+    {
+        "title":"Movie Night",
+        "img":"/Images/movie.png",
+        "text":"This website for Movie . It's a react web application.",
+        "github":"https://github.com/sakibsiddiqi15/react-movie-app",
+        "live":"https://movie-night-s15.netlify.app/"
+    },
+    {
+        "title":"Learn Code from Home",
+        "img":"/Images/lch.png",
+        "text":"This website for Codding course. It's a react web application.",
+        "github":"https://github.com/sakibsiddiqi15/react-lch-website",
+        "live":"https://lch-s15.netlify.app/"
     }
 ]

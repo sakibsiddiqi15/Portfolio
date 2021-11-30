@@ -11,7 +11,7 @@ const SingleProject = () => {
   const { route } = useParams();
   const { projects } = useProjects();
   const thisProject = projects?.find((project) => project.route === route);
-  console.log(thisProject?.features);
+  const imgClasses = "img-fluid border border-2 cover-4-3 my-shadow";
   return (
     <Page>
       <section id="pro" className="vh-min-100 mt-5">
@@ -22,7 +22,7 @@ const SingleProject = () => {
               <img
                 src={thisProject?.img[0]}
                 alt={thisProject?.route}
-                className="img-fluid border border-2 mb-3"
+                className={imgClasses + " mb-3"}
                 data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom"
               />
@@ -31,7 +31,7 @@ const SingleProject = () => {
                   <img
                     src={thisProject?.img[1]}
                     alt={thisProject?.route}
-                    className="img-fluid border border-2"
+                    className={imgClasses}
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                   />
@@ -40,7 +40,7 @@ const SingleProject = () => {
                   <img
                     src={thisProject?.img[2]}
                     alt={thisProject?.route}
-                    className="img-fluid border border-2"
+                    className={imgClasses}
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                   />

@@ -4,14 +4,15 @@ import Btn from "../../../Shared/Component/Buttons/Btn";
 import { IoNewspaperSharp } from "react-icons/all";
 const Header = () => {
   return (
-    <Container className="vh-min-100 center">
-      <h5xzz
+    <header id="#">
+      <Container className="vh-min-100 center">
+      <h5
         className="fw-normal primary-lt"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
         HELLO
-      </h5xzz>
+      </h5>
       <h1
         className="display-4 fw-bold primary"
         data-aos="fade-up"
@@ -34,6 +35,7 @@ const Header = () => {
         Resume <IoNewspaperSharp />
       </Btn>
     </Container>
+    </header>
   );
 };
 

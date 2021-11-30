@@ -3,6 +3,9 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+section{
+  padding-top:2rem ;
+}
 /* rounded */
 .rounded {
   border-radius: 8px !important;

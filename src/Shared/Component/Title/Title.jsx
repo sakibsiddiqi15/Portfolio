@@ -5,12 +5,11 @@ const Title = ({ children, title, icon, ...rest }) => {
   return (
     <div
       {...rest}
-      className="bg-gradient"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
     >
       <Container
-        className="py-4 center text-light pt-5"
+        className="py-4 center text-light pt-5 bg-gradient rounded"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >

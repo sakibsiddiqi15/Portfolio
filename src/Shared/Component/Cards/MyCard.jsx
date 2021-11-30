@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { GrOverview, BsGithub } from "react-icons/all";
+import { GrOverview, BsGithub,BsFillArrowUpRightCircleFill } from "react-icons/all";
 const MyCard = ({ children, img, title, github, livesite }) => {
   return (
     <Card
@@ -36,6 +36,16 @@ const MyCard = ({ children, img, title, github, livesite }) => {
                 href={livesite}
               >
                 <GrOverview />
+              </a>
+            </Col>
+            <Col xs={3}>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="a-r-4-4 rounded-pill center bg-light p-1"
+                href={livesite}
+              >
+                <BsFillArrowUpRightCircleFill />
               </a>
             </Col>
           </Row>

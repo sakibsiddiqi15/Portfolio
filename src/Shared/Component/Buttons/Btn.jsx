@@ -1,7 +1,7 @@
 import React from "react";
 
-const Btn = ({ children, link, ...rest }) => {
-  const className = "Btn rounded fill py-2 px-3";
+const Btn = ({ children, classes, link, ...rest }) => {
+  const className = `${classes} Btn rounded fill py-2 px-3`;
   return (
     <>
       {link ? (

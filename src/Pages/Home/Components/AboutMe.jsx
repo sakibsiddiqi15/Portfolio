@@ -55,12 +55,15 @@ const AboutMe = () => {
                 <Btn
                   link="https://drive.google.com/file/d/1BVMs5OxYj3FfCT1thtJ1Ssbib9mSt8Wh/view?usp=sharing"
                   target="_blink"
-                  classes="me-2"
+                  classes="py-2 nav-link d-inline-block me-2"
                 >
                   Resume <BsFillFileEarmarkPdfFill />
                 </Btn>
-                <Btn link="#contact">
-                  Contact Me <BsChatRightDotsFill />
+                <Btn
+                  link="#contact"
+                  classes="py-2 nav-link d-inline-block"
+                >
+                  Contact <BsChatRightDotsFill />
                 </Btn>
               </div>
             </div>

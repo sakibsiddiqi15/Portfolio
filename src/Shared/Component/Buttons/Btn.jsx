@@ -1,13 +1,12 @@
 import React from "react";
 
 const Btn = ({ children, classes, link, ...rest }) => {
-  const className = `${classes} Btn rounded fill py-2 px-3`;
+  const className = `${classes} Btn rounded-3 fill py-2 px-4`;
   return (
     <>
       {link ? (
         <a
           {...rest}
-          target="_blank"
           rel="noreferrer"
           href={link}
           className={className}

@@ -55,8 +55,8 @@ const SingleProject = () => {
                     <span
                       className="p-2 fw-bold dark m-2"
                       style={{
-                        borderLeft: "3px solid #333",
-                        background: "#00000010",
+                        borderLeft: "3px solid #8785FF",
+                        background: "#8785FF10",
                       }}
                       data-aos="fade-up"
                       data-aos-anchor-placement="center-bottom"
@@ -71,8 +71,7 @@ const SingleProject = () => {
                     <p
                       className="p-2 fw-bold dark me-2"
                       style={{
-                        borderLeft: "3px solid #333",
-                        background: "#00000010",
+                        borderLeft: "3px solid #8785FF",
                       }}
                       data-aos="fade-up"
                       data-aos-anchor-placement="center-bottom"
@@ -82,13 +81,13 @@ const SingleProject = () => {
                   ))}
                   <Row className="justify-content-center mt-4">
                     <Col xs={5}>
-                      <Btn target="_blank" link={thisProject?.livesite}>
+                      <Btn target="_blank" link={thisProject?.live}>
                         Github
                         <BsGithub />
                       </Btn>
                     </Col>
                     <Col xs={5}>
-                      <Btn target="_blank" link={thisProject?.livesite}>
+                      <Btn target="_blank" link={thisProject?.live}>
                         Live <GrOverview />
                       </Btn>
                     </Col>

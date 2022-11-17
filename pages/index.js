@@ -1,5 +1,6 @@
-import Image from "next/image";
 import react from "../public/react.svg";
+import Image from "next/image";
+import Head from "next/head";
 import BGshape from "./components/BGshape";
 import Header from "./components/Header";
 
@@ -33,6 +34,13 @@ const SKILLS = [
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="YO1JAz--a340FSlgSgzgurN8-pYqkSlSOpaw--AAvpg"
+        />
+      </Head>
+
       <Header />
       <section className="">
         <div className="container">

@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+
+import { withDefaultLayout } from "../components/layouts/layout.manager";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <div className='  bg-[#0c1224] bg-gradient-radial from-cyan-900/50 bg-fixed min-h-screen'> <Component {...pageProps} /></div>
+  const layout = Component.layout || withDefaultLayout;
+  const Page = () => layout(<Component {...pageProps} />);
+  return (
+    <>
+      <Page />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

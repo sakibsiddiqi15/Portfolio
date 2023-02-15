@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -6,20 +7,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors:{
+      dark:"#040826",
+      ...colors
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'sakib-gradient': 'linear-gradient(91.81deg, #81CAFF 0.77%, #95FFD2 47.33%, #C68CFF 99%)',
       }
-    },
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "20px",
-        sm: "1rem",
-        lg: "4rem",
-        xl: "5rem",
-        "2xl": "6rem",
-      },
     },
   },
   plugins: [require("daisyui")],

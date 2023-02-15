@@ -1,20 +1,18 @@
-import Image from "next/image";
-import Head from "next/head";
+import constants from "../utils/constants";
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="YO1JAz--a340FSlgSgzgurN8-pYqkSlSOpaw--AAvpg"
-        />
-        <meta
-          name="keywords"
-          content="sakib siddiqi supto, sakib, sakib siddiqi, supto, developer sakib siddiqi supto, sakibsiddiqisupto"
-        />
-      </Head>
-      <section id="banner">
-        <h1 className="text-4xl font-bold font-mono">SAKIB SIDDIQI SUPTO</h1>
+      <section className="pt-20">
+        <div className="text-center">
+          <div className="h-80 w-80 inline-flex justify-center items-center rounded-full relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={constants.DOMAIN + "banner.svg"} alt="" className="w-13/12 max-w-md inline-block z-10" />
+            <div className="absolute inline-block rounded-full bg-sakib-gradient animate-spin z-0 h-64 w-64 opacity-30" />
+            <div className="absolute inline-block rounded-full bg-sakib-gradient animate-spin [animation-delay:.15s] z-0 h-80 w-80 opacity-20 " />
+            <div className="absolute inline-block rounded-full bg-sakib-gradient animate-spin [animation-delay:.3s]duration-500 z-0 h-96 w-96 opacity-10" />
+          </div>
+          <h1 className="text-5xl tracking-wider font-bold bg-clip-text bg-sakib-gradient text-transparent font-mono">I'm Web Developer.</h1>
+        </div>
       </section>
     </>
   );

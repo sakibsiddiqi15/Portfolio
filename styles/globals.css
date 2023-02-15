@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-dark;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-3 mx-auto max-w-7xl;
+  }
+  .nav-link {
+    @apply relative inline-block px-6 py-2 font-bold tracking-wide text-lg;
+  }
+  .nav-link.active {
+    @apply bg-clip-text text-transparent bg-sakib-gradient;
+  }
+  .nav-link::before {
+    content: "";
+    @apply absolute bottom-0 left-0 h-1 bg-sakib-gradient w-0 rounded-full;
+  }
+  .nav-link:hover::before,.nav-link.active::before {
+    @apply w-full;
+  }
+}

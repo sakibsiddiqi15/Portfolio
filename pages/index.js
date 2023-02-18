@@ -11,7 +11,7 @@ export default function Home() {
             <div className="absolute border-2 border-white inline-block rounded-full bg-sakib-gradient animate-spin [animation-duration:4s] z-0 h-80 w-80 opacity-20 " />
             <div className="absolute border-2 border-white inline-block rounded-full bg-sakib-gradient animate-spin [animation-duration:8s] duration-500 z-0 h-96 w-96 opacity-10" />
           </div>
-          <h1 className="text-5xl tracking-wider font-bold bg-clip-text bg-sakib-gradient text-transparent font-mono">I'm Web Developer.</h1>
+          <h1 className="text-5xl tracking-wider font-bold bg-clip-text bg-sakib-gradient text-transparent font-mono">I&apos;m Web Developer.</h1>
         </div>
       </section>
     </>

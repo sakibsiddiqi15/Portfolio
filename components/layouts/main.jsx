@@ -1,6 +1,5 @@
 import constants from "../../utils/constants";
 
-
 function Header() {
   return (
     <header className="py-5">
@@ -12,14 +11,34 @@ function Header() {
           className=" max-w-[120px]"
         />
         <nav>
-            <ul className="flex relative flex-wrap">
-                <span  className="indicator inline-block h-1 w-24 bg-sakib-gradient rounded-full absolute"/>
-                <li><a href="#" className="nav-link">Home</a></li>
-                <li><a href="#" className="nav-link">About</a></li>
-                <li><a href="#" className="nav-link">Skills</a></li>
-                <li><a href="#" className="nav-link">Project</a></li>
-                <li><a href="#" className="nav-link">Contacts</a></li>
-            </ul>
+          <ul className="flex relative flex-wrap">
+            <span className="indicator inline-block h-1 w-24 bg-sakib-gradient rounded-full absolute" />
+            <li>
+              <a href="#" className="nav-link">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link">
+                Project
+              </a>
+            </li>
+            <li>
+              <a href="#" className="nav-link">
+                Contacts
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
